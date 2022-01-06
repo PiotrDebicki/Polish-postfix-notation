@@ -1,0 +1,21 @@
+body{
+    background-color:lavenderblush;
+    text-align: center;
+    text-size-adjust:initial;
+}
+.submit-button{
+    font-size: 2ch; 
+    border-color: #125555; 
+    font-weight: bold;
+    margin-bottom: 2ch;
+}
+ul{
+    list-style: none;
+}
+div{
+    bottom: 0;
+    text-align: left;
+    align-content: center;
+    margin-bottom: 0;
+    position: absolute;
+}

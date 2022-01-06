@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<html>
+
+<head>
+    <title>Odwrotna Notacja Polska</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Piotr Dębicki" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Odwrotna Notacja Polska</h1>
+    <form method='POST'>
+        {{ form.hidden_tag() }}
+        <p>Wyrażenie: {{ form.expression(class="expression-input") }}</p>
+        <p>{{ form.radioButton() }}</p>
+        <p>{{ form.submit(class="submit-button") }}</p>
+        <p>Ostatnie wyrażenie: {{last_expression}}</p>
+        <p>Wyrażenie po zmianie: {{expression_changed}}</p>
+        <p>Wartość wyrażenia: {{value}}</p>
+    </form>
+    <div>
+        <h4>Instrukcja</h4>
+        <ol>
+            <li>Wybierz typ twojego wyrażenia</li>
+            <li>Wpisz wyrażenie wszystkie znaki odseparuj spacją</li>
+            <li>Kliknij przycisk zatwierdzania</li>
+        </ol>
+    </div>
+</body>
+
+</html>
