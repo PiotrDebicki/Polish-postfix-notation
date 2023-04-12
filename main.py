@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 from flask_wtf import FlaskForm
-from wtforms import SubmitField
-from wtforms.fields.core import RadioField, StringField 
+from wtforms import SubmitField, RadioField, StringField
 from wtforms.validators import DataRequired
 import os
 
